@@ -1,3 +1,21 @@
+
+        
+		<?php
+require('db.php');
+if (isset($_REQUEST['username'])){
+      
+	$username = $_REQUEST['username'];
+	$email = $_REQUEST['email'];
+	$password = $_REQUEST['password'];
+    $query = "INSERT into `users` (username, password, email) VALUES ('$username', '".md5($password)."', '$email')";
+        $result = mysqli_query($con,$query);
+        if($result){
+            echo "<div class='form'>
+<h3>You are registered successfully.</h3>
+<br/>Click here to <a href='login.php'>Login</a></div>";
+        }
+    }else{
+?>
 <!doctype html>
 <html>
 
@@ -53,35 +71,16 @@
 			Remember, the more time you spend together, the more tickets you will get.<br><br>
 			For fairplay, we limited the groups to a maximum of 10 members.</p>
 		</section>
-<!--User registration-->
-		<?php
-require('db.php');
-if (isset($_REQUEST['username'])){
-      
-	$username = $_REQUEST['username'];
-	$email = $_REQUEST['email'];
-	$password = $_REQUEST['password'];
-    $query = "INSERT into `users` (username, password, email) VALUES ('$username', '".md5($password)."', '$email')";
-        $result = mysqli_query($con,$query);
-        if($result){
-            echo "<div class='form'>
-<h3>You are registered successfully.</h3>
-<br/>Click here to <a href='login.php'>Login</a></div>";
-        }
-    }else{
-?>
-
 <section id="signup">
   <form name="registration" action="" method="post">
-     <input class="type_box" type="text" name="username" placeholder="Full Name" required>
+     <input class="type_box" type="text" name="username" placeholder="Username" required>
      <input class="type_box" type="email" name="email" placeholder="Email Address" required>
-     <input class="type_box" type="password" name="password" id="password" placeholder="Desired Password" required>
+     <input class="type_box" type="password" name="password" id="Password" placeholder="Desired Password" required>
      
-     <input class="login_box" type="submit" name="submit" value="Sign Up" />
+     <input class="login_box" type="submit" name="submit" value="Sign Up" /> 
   </form>
+  <a href="login.php"><p id="toggle">I have an account</p></a>
 </section>
-<?php } ?>
-
 
 </main>
 <footer>
@@ -90,3 +89,7 @@ if (isset($_REQUEST['username'])){
 </body>
 
 </html>
+<?php } ?>
+
+
+

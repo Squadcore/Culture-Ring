@@ -91,7 +91,11 @@
 }
 
 #steps p{
+    
+}
 
+#toggle {
+	
 }
 
 /*Signup
@@ -118,6 +122,8 @@
 
 	background-color: #f5f5f5;
 }
+
+
 
 /*Removes Autofill Icon From Input*/
 input::-webkit-contacts-auto-fill-button {
