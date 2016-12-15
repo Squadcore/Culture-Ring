@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Fonts
+------------------------------------------------------------------------*/
+
+@font-face{
+	font-family:code_bold;
+	src: url(../fonts/code_bold.otf);
+}
+
+@font-face{
+	font-family:code_light;
+	src: url(../fonts/code_light.otf);
+}
+
+@font-face{
+	font-family:lato;
+	src: url(../fonts/lato.ttf);
+}
+
+@font-face{
+	font-family:lato_light;
+	src: url(../fonts/lato_light.ttf);
+}
+
+@font-face{
+	font-family:lato_hairline;
+	src: url(../fonts/lato_hairline.ttf);
+}
+
+@font-face{
+	font-family:modern_pics;
+	src: url(../fonts/modern_pics.otf);
+}
+
+@font-face{
+	font-family:atfant_rg;
+	src: url(../fonts/atfantrg.ttf);
+}
+
+/*Text
+------------------------------------------------------------------------*/
+
+h1{
+	font-family:code_light;
+	font-size:3.5em;
+}
+
+h2{
+	font-family:code_light;
+	font-size:1.5em;
+}
+
+h3{
+	text-align:center;
+	font-family:code_bold;
+	font-size:1em;
+}
+
+h4{
+	text-align:center;
+	font-family:code_bold;
+	font-size:0.9em;
+	margin: 0 auto;
+	color: white;
+}
+
+p{
+	text-align:center;
+	font-family:lato_light;
+	line-height:125%;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*Width
+------------------------------------------------------------------------*/
+
+.w50{
+	width:50%;
+}
+
+.w25{
+	width:25%;
+}

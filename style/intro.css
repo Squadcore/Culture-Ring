@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#intro{
+	width: 100%;
+	height: auto;
+
+	padding: 100px 0;
+
+	text-align: center;
+
+	background: url(../media/image/tilebackground.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: white;
+
+}
+
+#intro_header{
+	font-family: code_bold;
+}
+
+#intro_subheader{
+	font-family: code_bold;
+	margin-top: 50px;
+}
+
+/*Steps
+------------------------------------------------------------------------*/
+#steps{
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+
+	padding:100px auto;
+
+}
+
+#step_one{
+	background-color: #f9f9f9;
+}
+
+#step_two{
+	background-color: #f7f7f7;
+}
+
+#step_three{
+	background-color: #f5f5f5;
+}
+
+.step_wrapper{
+	width: 80%;
+	height: auto;
+
+	margin: 0 auto;
+	padding: 50px 10%;
+}
+
+.step_number{
+	height: 50px;
+	width: 50px;
+
+	vertical-align: middle;
+	line-height: 50px;
+	font-family: lato;
+	color: #252525;
+
+	margin: 0 auto;
+	margin-top: -75px;
+
+	border-radius: 50px;
+
+	position: relative;
+}
+
+	#step_one .step_number, #step_two .step_number, #step_three .step_number{
+
+		background: url(../media/image/circle.svg);
+
+	}
+
+#steps h3{
+	margin: 25px 0;
+
+}
+
+.step_icon{
+
+}
+
+#steps p{
+
+}
+
+/*Signup
+------------------------------------------------------------------------*/
+
+#signup{
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+
+	padding:100px auto;
+
+	background-color: #f5f5f5;
+}
+
+#login{
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+
+	padding:100px auto;
+
+	background-color: #f5f5f5;
+}
+
+/*Removes Autofill Icon From Input*/
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+.type_box, .login_box{
+	width: 80%;
+	height: auto;
+	margin: 1px 10%;
+	padding: 1em 0;
+	border: none;
+	outline: 0;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+	text-decoration:none;
+	text-align:center;
+	font-size:1em;
+
+}
+
+.type_box{
+	background-color:white;
+
+	font-family:lato_light;
+	line-height:125%;
+	color:black;
+}
+
+.login_box{
+	background-color:#252525;
+
+	font-family:code_bold;
+	color:white;
+	cursor:pointer;
+
+	margin-bottom: 100px;
+	margin-top: 30px;
+
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+.login_box:hover{
+	width: 75%;
+	background-color: #151515;
+}
+
+#signup_header{
+	padding: 25px 0;
+
+}
+
+#signin_header{
+	padding: 25px 0;
+
+}
