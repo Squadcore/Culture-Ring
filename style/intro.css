@@ -91,11 +91,7 @@
 }
 
 #steps p{
-    
-}
 
-#toggle {
-	
 }
 
 /*Signup
@@ -184,4 +180,11 @@ input::-webkit-contacts-auto-fill-button {
 #signin_header{
 	padding: 25px 0;
 
+}
+
+.other_button{
+	width: 30%;
+	height: auto;
+
+	background-color: blue;
 }

@@ -10,7 +10,7 @@
 }
 
 #map {
-	
+
 	width:1750px;
 	height:1750px;
 	position:absolute;
@@ -334,10 +334,15 @@
 /*Achievements*/
 
 .achievement_wrapper{
-	width: 50%;
+	width: 100%;
 	height: auto;
 
-	background-color: #367dc1;
+	margin: 10px 0 0 0;
+
+	background: url(../media/image/achievement.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
 	display: inline-block;
 }
@@ -383,7 +388,10 @@ height: auto;
 margin-top: 10px;
 text-align: center;
 
-background-color: #367dc1;
+background: url(../media/image/routes_background.svg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 
 .route_wrapper h3{
@@ -418,10 +426,4 @@ color: white;
 
 background-color: #252525;
 cursor: pointer;
-}
-
-#rainbow_gathering{
-background: url(../media/image/rainbow.png);
-background-position: center;
-background-size: cover;
 }

@@ -1,5 +1,5 @@
-<?php 
-		    
+<?php
+
     require('db.php');
     session_start();
     if (isset($_POST['username'])){
@@ -25,8 +25,8 @@
 <meta charset="utf-8">
 <title>Culture Ring - Login</title>
 <link href="style/reset.css" type="text/css" rel="stylesheet">
-<link href="style/intro.css" type="text/css" rel="stylesheet">
 <link href="style/main.css" type="text/css" rel="stylesheet">
+<link href="style/intro.css" type="text/css" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -48,7 +48,7 @@
            <input class="type_box" type="password" name="password" placeholder="Password" required /> <br>
 
            <input class="login_box" name="submit" type="submit" value="Login" />
-           <a href="intro.php"><p>Don't have an account yet?</p></a>
+           <a href="intro.php" class="other_button"><p>Signup</p></a>
            </form>
      </section>
 </main>
@@ -57,10 +57,3 @@
 </body>
 </html>
 <?php } ?>
-		
-		 
-		
-
-
-
-

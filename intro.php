@@ -1,9 +1,9 @@
 
-        
+
 		<?php
 require('db.php');
 if (isset($_REQUEST['username'])){
-      
+
 	$username = $_REQUEST['username'];
 	$email = $_REQUEST['email'];
 	$password = $_REQUEST['password'];
@@ -24,8 +24,8 @@ if (isset($_REQUEST['username'])){
 <meta charset="utf-8">
 <title>Culture Ring - Signup</title>
 <link href="style/reset.css" type="text/css" rel="stylesheet">
-<link href="style/intro.css" type="text/css" rel="stylesheet">
 <link href="style/main.css" type="text/css" rel="stylesheet">
+<link href="style/intro.css" type="text/css" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -76,10 +76,10 @@ if (isset($_REQUEST['username'])){
      <input class="type_box" type="text" name="username" placeholder="Username" required>
      <input class="type_box" type="email" name="email" placeholder="Email Address" required>
      <input class="type_box" type="password" name="password" id="Password" placeholder="Desired Password" required>
-     
-     <input class="login_box" type="submit" name="submit" value="Sign Up" /> 
+
+     <input class="login_box" type="submit" name="submit" value="Sign Up" />
   </form>
-  <a href="login.php"><p id="toggle">I have an account</p></a>
+  <a href="login.php" class="other_button"><p id="toggle">Login</p></a>
 </section>
 
 </main>
@@ -90,6 +90,3 @@ if (isset($_REQUEST['username'])){
 
 </html>
 <?php } ?>
-
-
-
